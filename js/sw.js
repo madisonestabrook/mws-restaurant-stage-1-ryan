@@ -36,12 +36,12 @@ self.addEventListener('fetch', function(e) {
       caches.match(e.request).then(function(response) {
         // Uses the match method to see if the event request URL already exists and uses the ten method to receive a promise
         if(response) { // Success case: prints a message and returns the response variable
-            console.log("Found " e.request, " in cache");
+            console.log('Found ', e.request, ' in cache');
             return response;
         }
         else { // Failure case: fetches the request
           console.log('Could not find ', e.request, ' in request, FETCHING');
-          return fetch(e.request);
+          return fetch(e.request)
           // Adds the response to the cache for later use
           .then(function(response){
             const clonedResponse = response.clone();

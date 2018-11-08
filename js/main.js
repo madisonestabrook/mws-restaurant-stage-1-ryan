@@ -117,7 +117,7 @@ updateRestaurants = () => {
 
   DBHelper.fetchRestaurantByCuisineAndNeighborhood(cuisine, neighborhood, (error, restaurants) => {
     if (error) { // Got an error!
-      console.error(error);
+      console.log(error);
     } else {
       resetRestaurants(restaurants);
       fillRestaurantsHTML();
@@ -188,17 +188,20 @@ createRestaurantHTML = (restaurant) => {
 
   return li
 }
-// Registers the service worker
+// Registers the service worker - from https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#Enter_service_workers
 if('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-  navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-  }, function(error)  {     // Registration was NOT successful
-    console.log('Failure of ' , error);
+  navigator.serviceWorker.register('/sw.js')
+  .then(function(registration) {
+     // Registration was successful!
+      console.log('ServiceWorker registration successful with scope: '+ registration.scope);
+  }).catch(function(error) {
+    // Registration was NOT successful
+    console.log('Failure of ' +  error);
   });
-});
+} else {
+  console.log('Sorry - it looks like service workers are not supported');
 }
+
 /**
  * Add markers for current restaurants to the map.
  */
