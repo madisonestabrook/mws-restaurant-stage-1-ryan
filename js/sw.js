@@ -4,7 +4,7 @@ const cacheFiles = [
   '/index.html',
   '/restaurant.html',
   '/css/app.css',
-   '/js/dbhelper.js',
+  '/js/dbhelper.js',
   '/js/main.js',
   '/js/restaurant_info.js',
   '/data/restaurants.json',
@@ -20,7 +20,7 @@ const cacheFiles = [
   '/img/10.jpg'
 ];
 // Listens for the installation event
-self.addEventListener('install', function(e)) {
+self.addEventListener('install', function(e) {
     e.waitUntil( // Uses the waitUntil method to postpone action until after the installation
       caches.open('v1'.then(function(cache){ // Uses the caches array and the open method to either create or open a new cache
         return cache.addAll(cacheFiles)
@@ -40,7 +40,7 @@ self.addEventListener('fetch', function(e) {
             return response;
         }
         else { // Failure case: fetches the request
-          console.log('Could not find ', e.request, ' im request, FETCHING');
+          console.log('Could not find ', e.request, ' in request, FETCHING');
           return fetch(e.request);
           // Adds the response to the cache for later use
           .then(function(response){

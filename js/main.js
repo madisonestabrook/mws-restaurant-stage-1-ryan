@@ -1,8 +1,8 @@
 let restaurants,
   neighborhoods,
-  cuisines
-var newMap
-var markers = []
+  cuisines;
+var newMap;
+var markers = [];
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -162,9 +162,12 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = restaurant.name + ' Restaurant';
+  // Added alt tag to images
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
+  // Changed level of heading from one to two
   name.innerHTML = restaurant.name;
   li.append(name);
 
@@ -187,11 +190,14 @@ createRestaurantHTML = (restaurant) => {
 }
 // Registers the service worker
 if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-  .register('/sw.js')
-  .catch(function(err) {
-    console.log(err);
+  window.addEventListener('load', function() {
+  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+  }, function(error)  {     // Registration was NOT successful
+    console.log('Failure of ' , error);
   });
+});
 }
 /**
  * Add markers for current restaurants to the map.
