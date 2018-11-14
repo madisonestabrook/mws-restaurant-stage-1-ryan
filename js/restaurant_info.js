@@ -36,7 +36,7 @@ initMap = () => {
   });
 }
 
-/* window.initMap = () => {
+ window.initMap = () => {
   fetchRestaurantFromURL((error, restaurant) => {
     if (error) { // Got an error!
       console.error(error);
@@ -50,7 +50,7 @@ initMap = () => {
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
     }
   });
-} */
+} 
 
 /**
  * Get current restaurant from page URL.
