@@ -190,7 +190,7 @@ createRestaurantHTML = (restaurant) => {
 }
 // Registers the service worker - from https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#Enter_service_workers
 if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+  navigator.serviceWorker.register('js/sw.js').then(function(registration) {
      // Registration was successful!
       console.log('ServiceWorker registration successful with scope: '+ registration.scope);
   }).catch(function(error) {
