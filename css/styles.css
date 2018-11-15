@@ -293,3 +293,15 @@ nav h1 a {
 	}
 	/* Add a limit to the max-width of images */
 }
+@media screen and (min-width: 415px) and (max-width: 750px) {
+/*For devices between 415 and 715 pixels*/	
+	h1, h2, h3, h4, h5, h6, div, a, p {
+		font-size: 13pt; 
+	}
+	/* Increase font size */
+	img { 
+		max-width: 465px;
+		width: 65%;
+	}
+	/* Change images */
+}
