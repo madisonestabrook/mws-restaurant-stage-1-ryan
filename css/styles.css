@@ -281,3 +281,12 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+@media screen and (min-width: 360) and (max-width: 414) {
+	h1, h2, h3, h4, h5, h6, div, a, p {
+		font-size: 14pt; 
+	}
+	img.restarant-img{ 
+		max-width: 169px;
+	}
+}
