@@ -161,9 +161,7 @@ nav h1 a {
   display: block;
   margin: 15px;
   max-width: 470px;
-  max-height: 380px;
   width: 80%;
-  height: 75%; 
 }
 #restaurants-list li h1 {
   color: #f18200;
