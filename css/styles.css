@@ -288,7 +288,7 @@ nav h1 a {
 		font-size: 14pt; 
 	}
 	/* Increase font size */
-	img { 
+	img, li { 
 		max-width: 169px;
 	}
 	/* Add a limit to the max-width of images */
@@ -303,5 +303,9 @@ nav h1 a {
 		max-width: 465px;
 		width: 65%;
 	}
-	/* Change images */
+	li {
+		max-width: 465px;
+		width: 65%;	
+	}
+	/* Change images and their boxes */
 }
