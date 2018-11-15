@@ -161,7 +161,7 @@ nav h1 a {
   display: block;
   margin: 15px;
   max-width: 470px;
-  min-height: 380px;
+  max-height: 380px;
   width: 80%;
   height: 75%; 
 }
