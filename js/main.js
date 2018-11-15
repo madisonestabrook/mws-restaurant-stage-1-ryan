@@ -189,6 +189,7 @@ createRestaurantHTML = (restaurant) => {
   return li
 }
 // Registers the service worker - from https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#Enter_service_workers
+/*
 if('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').then(function(registration) {
      // Registration was successful!
@@ -200,7 +201,7 @@ if('serviceWorker' in navigator) {
 } else {
   console.log('Sorry - it looks like service workers are not supported');
 }
-
+*/
 /**
  * Add markers for current restaurants to the map.
  */
