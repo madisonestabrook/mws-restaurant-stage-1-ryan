@@ -283,10 +283,13 @@ nav h1 a {
 }
 
 @media screen and (max-width: 414px) {
+/*For devices smaller than 414 pixels (pxs)*/
 	h1, h2, h3, h4, h5, h6, div, a, p {
 		font-size: 14pt; 
 	}
-	img.restarant-img{ 
+	/* Increase font size */
+	img { 
 		max-width: 169px;
 	}
+	/* Add a limit to the max-width of images */
 }
