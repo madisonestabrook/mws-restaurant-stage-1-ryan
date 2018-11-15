@@ -282,7 +282,7 @@ nav h1 a {
   color: #666;
 }
 
-@media screen and (min-width: 360) and (max-width: 414) {
+@media screen and (max-width: 414px) {
 	h1, h2, h3, h4, h5, h6, div, a, p {
 		font-size: 14pt; 
 	}
