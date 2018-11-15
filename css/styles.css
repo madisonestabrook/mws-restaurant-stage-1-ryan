@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: run-in;
+	display: block;
 }
 #maincontent {
   background-color: #f3f3f3;
@@ -181,7 +181,7 @@ nav h1 a {
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #fff;
-  display: inline-block;
+  display: flex;
   font-size: 10pt;
   margin: 15px 0 0;
   padding: 8px 30px 10px;
