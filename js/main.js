@@ -46,7 +46,7 @@ fillNeighborhoodsHTML = (neighborhoods = self.neighborhoods) => {
 fetchCuisines = () => {
   DBHelper.fetchCuisines((error, cuisines) => {
     if (error) { // Got an error!
-      console.error(error);
+      console.log(error);
     } else {
       self.cuisines = cuisines;
       fillCuisinesHTML();
