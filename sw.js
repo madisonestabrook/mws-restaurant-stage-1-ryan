@@ -3,7 +3,7 @@ const cacheFiles = [
   '/',
   '/index.html',
   '/restaurant.html',
-  '/css/app.css',
+  '/css/styles.css',
   '/js/dbhelper.js',
   '/js/main.js',
   '/js/restaurant_info.js',
