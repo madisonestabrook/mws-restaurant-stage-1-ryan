@@ -19,6 +19,12 @@ const cacheFiles = [
   '/img/9.jpg',
   '/img/10.jpg'
 ];
+// From https://developers.google.com/web/fundamentals/primers/service-workers/registration 
+if('serviceWorker' in navigator) { 
+  window.addEventListener('load', function() {  
+      navigator.servicerWorker.register('./sw.js');
+  });
+}
 // Listens for the installation event
 self.addEventListener('install', function(e) {
     e.waitUntil( // Uses the waitUntil method to postpone action until after the installation
