@@ -1,6 +1,6 @@
 @media screen and (max-width: 414px) {
 /*For devices smaller than 414 pixels (pxs)*/
-	#map, #map-container { 
+	#map, #map-container, #footer{ 
 		max-width: 0px;
 	}
 	/* Add a limit to the max-width of the map */
@@ -14,7 +14,7 @@
 		max-width: 0px;
 	}
 	/* Add a limit to the max-width of the map */
-	#restaurant-container, #breadcrumb {
+	#restaurant-container, #breadcrumb, #footer {
 		width: 100%; 	
 	}
 }
