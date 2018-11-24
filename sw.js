@@ -29,7 +29,7 @@ self.addEventListener('install', function(e) {
       })
       )
 });
-});
+
 
 // Listens for the fetch event
 self.addEventListener('fetch', function(e) {
