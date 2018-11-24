@@ -4,7 +4,7 @@
 		max-width: 0px;
 	}
 	/* Add a limit to the max-width of the map */
-	#restaurant-container {
+	#restaurant-container, #breadcrumb {
 		width: 100%; 	
 	}
 }
@@ -14,7 +14,7 @@
 		max-width: 0px;
 	}
 	/* Add a limit to the max-width of the map */
-	#restaurant-container {
+	#restaurant-container, #breadcrumb {
 		width: 100%; 	
 	}
 }
