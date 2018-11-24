@@ -26,9 +26,9 @@ self.addEventListener('install', function(e) {
     e.waitUntil( // Uses the waitUntil method to postpone action until after the installation
       caches.open('v1').then(function(cache){ // Uses the caches array and the open method to either create or open a new cache
         return cache.addAll(cacheFiles);
-      });
+      })
       )
-    );
+});
 });
 
 // Listens for the fetch event
