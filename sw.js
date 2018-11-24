@@ -49,7 +49,7 @@ self.addEventListener('fetch', function(e) {
             caches.open('v1').then(function(cache) {
               cache.put(e.request, response);
             });
-            return response;
+            return clonedResponse;
           })
           .catch(function(err) {
             console.log(err);
