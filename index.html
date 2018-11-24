@@ -40,18 +40,12 @@
   </main>
   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
   <script type="text/javascript">
-  function serviceWorker(){
-      let sw=null; if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js').then(function(registration) {
-     // Registration was successful!
-      console.log('ServiceWorker registration successful with scope: '+ registration.scope);
-  }).catch(function(error) {
-    // Registration was NOT successful
-    console.log('Failure of ' +  error);
+      // From https://developers.google.com/web/fundamentals/primers/service-workers/registration 
+if('serviceWorker' in navigator) { 
+  window.addEventListener('load', function() {  
+      navigator.servicerWorker.register('./sw.js');
   });
-} else {
-  console.log('Sorry - it looks like service workers are not supported');
-}}
+}
 </script>
     <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
