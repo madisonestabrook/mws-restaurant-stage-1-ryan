@@ -19,6 +19,7 @@ const cacheFiles = [
   '/img/9.jpg',
   '/img/10.jpg'
 ];
+let v1;
 // Listens for the installation event
 self.addEventListener('install', function(e) {
     e.waitUntil( // Uses the waitUntil method to postpone action until after the installation
