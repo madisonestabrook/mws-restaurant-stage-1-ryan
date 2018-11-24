@@ -1,0 +1,14 @@
+@media screen and (max-width: 414px) {
+/*For devices smaller than 414 pixels (pxs)*/
+	#map { 
+		max-width: 0px;
+	}
+	/* Add a limit to the max-width of the map */
+}
+@media screen and (min-width: 415px) and (max-width: 750px) {
+/*For devices between 415 and 715 pixels*/	
+#map { 
+		max-width: 0px;
+	}
+	/* Add a limit to the max-width of the map */
+}
