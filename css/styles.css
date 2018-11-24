@@ -291,7 +291,7 @@ nav h1 a {
 		font-size: 14pt; 
 	}
 	/* Increase font size */
-	img, li { 
+	img, li, .map { 
 		max-width: 169px;
 		margin: 5px;
 	}
@@ -303,7 +303,7 @@ nav h1 a {
 		font-size: 13pt; 
 	}
 	/* Increase font size */
-	img { 
+	img , .map{ 
 		max-width: 465px;
 		width: 65%;
 	}
