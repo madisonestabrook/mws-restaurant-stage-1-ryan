@@ -48,7 +48,7 @@ self.addEventListener('fetch', function(e) {
             const clonedResponse = response.clone();
             caches.open('v1').then(function(cache) {
               cache.put(e.request, response);
-            })
+            });
             return response;
           })
           .catch(function(err) {
